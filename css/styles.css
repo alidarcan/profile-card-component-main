@@ -1,0 +1,111 @@
+/***************Main Selectors******************/
+body {
+  width: 1440px;
+  height: 900px;
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 10px;
+  background-color: hsl(185, 75%, 39%);
+}
+
+h1 {
+  color: hsl(229, 23%, 23%);
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+p {
+  color: hsl(227, 10%, 46%);
+}
+
+hr {
+  color: hsl(0, 0%, 59%);
+}
+
+span {
+  font-size: 18px;
+}
+
+/************Class Selectors*********************/
+.background {
+  width: 1440px;
+  height: 900px;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.bg-bot {
+  position: absolute;
+  bottom: -150%;
+  right: -20%;
+  z-index: 0;
+}
+
+.bg-top {
+  position: absolute;
+  top: -75%;
+  left: -20%;
+  z-index: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 250px 545px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.top-container {
+  z-index: 1;
+  width: 350px;
+  height: 140px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+}
+
+.photo-container {
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  margin-left: 127px;
+  margin-top: -60px;
+
+}
+.mid-container {
+  z-index: 1;
+  width: 350px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 1;
+  background-color: white;
+  padding-top: 75px;
+}
+.bottom-container {
+  z-index: 1;
+  width: 350px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 2;
+  background-color: white;
+}
+
+.profile-pic {
+  border: solid 5px white;
+  border-radius: 50%;
+}
